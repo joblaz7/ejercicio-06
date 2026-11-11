@@ -1,15 +1,29 @@
-* {
-  box-sizing: border-box;
+/* ========== VARIABLES ========== */
+:root {
+  --color-item: lightsalmon;
+  --color-sub-item: rgb(253, 213, 197);
 }
+
+/* ========== BASE ========== */
 h1 {
   font-size: 1.5em;
   font-weight: bold;
 }
+
+/* ========== LAYOUT ========== */
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
+/* ========== COMPONENTS ========== */
 .grid-item {
-  background-color: lightsalmon;
+  background-color: var(--color-item);
   padding: 3rem;
 }
+
 .sub-item {
-  background-color: rgb(253, 213, 197);
+  background-color: var(--color-sub-item);
   padding: 1rem;
 }
